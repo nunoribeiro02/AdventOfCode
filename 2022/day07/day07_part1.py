@@ -93,8 +93,6 @@ if __name__ == "__main__":
     
     root = Tree()
     currentNode = root
-    maxLevel = -1
-    directory = 0
     for line in input:
         if line[0] == '$': # command
             currentNode = parseCommand(line, currentNode)
